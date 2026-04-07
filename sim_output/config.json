@@ -1,0 +1,36 @@
+{
+  "dt":0.1,
+  "max_steps":350,
+  "world_size":20.0,
+  "n_landmarks":18,
+  "sensor_range":9.0,
+  "fov_rad":3.1415926536,
+  "motion_noise_std":[
+    0.03,
+    0.03,
+    0.01
+  ],
+  "meas_noise_std":[
+    0.15,
+    0.03
+  ],
+  "process_noise_diag":[
+    0.02,
+    0.02,
+    0.01
+  ],
+  "init_pose_std":[
+    0.2,
+    0.2,
+    0.05
+  ],
+  "goal_tolerance_true":0.5,
+  "act_est_tolerance":0.6,
+  "act_uncertainty_threshold":0.35,
+  "kp_v":1.0,
+  "kp_w":2.5,
+  "max_v":1.2,
+  "max_w":1.5,
+  "stop_v_near_goal":0.25,
+  "seed":7
+}
