@@ -1,17 +1,15 @@
-# vol3-sem2-project
+# PREDICTING MAP-READINESS WITH EKF-SLAM
 Learn to predict whether a SLAM-based system is ready to act, using sequential features derived from its state estimates, uncertainty, and observations.
-
-# Predicting Readiness-to-Act in SLAM Systems
 
 ## Overview
 
-Autonomous systems often rely on state estimation algorithms such as SLAM (Simultaneous Localization and Mapping) to operate in uncertain environments. However, accurate estimation alone is not sufficient—the system must also determine **when it is confident enough to act**.
+Autonomous systems often rely on state estimation algorithms such as SLAM (Simultaneous Localization and Mapping) to operate in uncertain environments.
 
 This project studies the following question:
 
-> Given a stream of noisy observations and SLAM estimates, when is the system truly ready to act?
+> Given a stream of noisy observations and SLAM estimates over random-walk, at what point has the agent explored enough of its envi-ronment to reliably navigate it and execute a given task?
 
-We simulate a robot navigating toward a target using noisy landmark observations and EKF-SLAM. At each time step, we evaluate whether acting at that moment would succeed based on ground truth, and we train models to predict this readiness from sequential data.
+We simulate a robot operating a random exploration policy using noisy landmark observations and EKF-SLAM to (1) predict whether the map is ready at a given time and (2) estimate the remaining time until map-readiness.
 
 ---
 
