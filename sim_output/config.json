@@ -1,36 +1,42 @@
 {
   "dt":0.1,
-  "max_steps":350,
-  "world_size":20.0,
-  "n_landmarks":18,
-  "sensor_range":9.0,
-  "fov_rad":3.1415926536,
+  "max_steps":500,
+  "world_size":25.0,
+  "n_landmarks":20,
+  "sensor_range":10.0,
+  "fov_rad":6.2831853072,
   "motion_noise_std":[
     0.03,
     0.03,
-    0.01
-  ],
-  "meas_noise_std":[
-    0.15,
-    0.03
+    0.015
   ],
   "process_noise_diag":[
-    0.02,
-    0.02,
-    0.01
+    0.03,
+    0.03,
+    0.02
+  ],
+  "meas_noise_std":[
+    0.2,
+    0.04
   ],
   "init_pose_std":[
     0.2,
     0.2,
-    0.05
+    0.08
   ],
-  "goal_tolerance_true":0.5,
-  "act_est_tolerance":0.6,
-  "act_uncertainty_threshold":0.35,
-  "kp_v":1.0,
-  "kp_w":2.5,
-  "max_v":1.2,
+  "init_landmark_var":4.0,
+  "huge_landmark_var":1000000.0,
+  "explore_v":0.8,
   "max_w":1.5,
-  "stop_v_near_goal":0.25,
+  "heading_noise_std":0.35,
+  "turn_refresh_steps":12,
+  "boundary_margin":2.5,
+  "boundary_turn_gain":2.2,
+  "unseen_bias_gain":1.4,
+  "uncertain_landmark_gain":0.8,
+  "near_goal_speed":0.2,
+  "readiness_epsilon":0.4,
+  "readiness_hold_steps":8,
+  "recent_window":15,
   "seed":7
 }
